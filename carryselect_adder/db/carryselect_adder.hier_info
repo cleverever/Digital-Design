@@ -1,0 +1,1046 @@
+|carryselect_adder
+a[0] => a[0].IN2
+a[1] => a[1].IN2
+a[2] => a[2].IN2
+a[3] => a[3].IN2
+a[4] => a[4].IN2
+a[5] => a[5].IN2
+a[6] => a[6].IN2
+a[7] => a[7].IN2
+a[8] => a[8].IN2
+a[9] => a[9].IN2
+a[10] => a[10].IN2
+a[11] => a[11].IN2
+a[12] => a[12].IN2
+a[13] => a[13].IN2
+a[14] => a[14].IN2
+a[15] => a[15].IN2
+a[16] => a[16].IN2
+a[17] => a[17].IN2
+a[18] => a[18].IN2
+a[19] => a[19].IN2
+a[20] => a[20].IN2
+a[21] => a[21].IN2
+a[22] => a[22].IN2
+a[23] => a[23].IN2
+a[24] => a[24].IN2
+a[25] => a[25].IN2
+a[26] => a[26].IN2
+a[27] => a[27].IN2
+a[28] => a[28].IN2
+a[29] => a[29].IN2
+a[30] => a[30].IN2
+a[31] => a[31].IN2
+b[0] => b[0].IN2
+b[1] => b[1].IN2
+b[2] => b[2].IN2
+b[3] => b[3].IN2
+b[4] => b[4].IN2
+b[5] => b[5].IN2
+b[6] => b[6].IN2
+b[7] => b[7].IN2
+b[8] => b[8].IN2
+b[9] => b[9].IN2
+b[10] => b[10].IN2
+b[11] => b[11].IN2
+b[12] => b[12].IN2
+b[13] => b[13].IN2
+b[14] => b[14].IN2
+b[15] => b[15].IN2
+b[16] => b[16].IN2
+b[17] => b[17].IN2
+b[18] => b[18].IN2
+b[19] => b[19].IN2
+b[20] => b[20].IN2
+b[21] => b[21].IN2
+b[22] => b[22].IN2
+b[23] => b[23].IN2
+b[24] => b[24].IN2
+b[25] => b[25].IN2
+b[26] => b[26].IN2
+b[27] => b[27].IN2
+b[28] => b[28].IN2
+b[29] => b[29].IN2
+b[30] => b[30].IN2
+b[31] => b[31].IN2
+c_in => WideNor0.IN2
+c_in => carry.IN1
+c_in => sum.OUTPUTSELECT
+c_in => sum.OUTPUTSELECT
+c_in => sum.OUTPUTSELECT
+c_in => sum.OUTPUTSELECT
+c_in => sum.OUTPUTSELECT
+c_in => sum.OUTPUTSELECT
+c_in => sum.OUTPUTSELECT
+c_in => sum.OUTPUTSELECT
+sum[0] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[2] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[3] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[4] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[5] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[6] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[7] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[8] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[9] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[10] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[11] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[12] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[13] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[14] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[15] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[16] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[17] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[18] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[19] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[20] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[21] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[22] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[23] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[24] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[25] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[26] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[27] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[28] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[29] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[30] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[31] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[0].rca0
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+c_in => carry[0].IN1
+sum[0] <= full_adder:gen_adder[0].full_adder.sum
+sum[1] <= full_adder:gen_adder[1].full_adder.sum
+sum[2] <= full_adder:gen_adder[2].full_adder.sum
+sum[3] <= full_adder:gen_adder[3].full_adder.sum
+sum[4] <= full_adder:gen_adder[4].full_adder.sum
+sum[5] <= full_adder:gen_adder[5].full_adder.sum
+sum[6] <= full_adder:gen_adder[6].full_adder.sum
+sum[7] <= full_adder:gen_adder[7].full_adder.sum
+c_out <= full_adder:gen_adder[7].full_adder.c_out
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[0].rca0|full_adder:gen_adder[0].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[0].rca0|full_adder:gen_adder[1].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[0].rca0|full_adder:gen_adder[2].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[0].rca0|full_adder:gen_adder[3].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[0].rca0|full_adder:gen_adder[4].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[0].rca0|full_adder:gen_adder[5].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[0].rca0|full_adder:gen_adder[6].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[0].rca0|full_adder:gen_adder[7].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[0].rca1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+c_in => carry[0].IN1
+sum[0] <= full_adder:gen_adder[0].full_adder.sum
+sum[1] <= full_adder:gen_adder[1].full_adder.sum
+sum[2] <= full_adder:gen_adder[2].full_adder.sum
+sum[3] <= full_adder:gen_adder[3].full_adder.sum
+sum[4] <= full_adder:gen_adder[4].full_adder.sum
+sum[5] <= full_adder:gen_adder[5].full_adder.sum
+sum[6] <= full_adder:gen_adder[6].full_adder.sum
+sum[7] <= full_adder:gen_adder[7].full_adder.sum
+c_out <= full_adder:gen_adder[7].full_adder.c_out
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[0].rca1|full_adder:gen_adder[0].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[0].rca1|full_adder:gen_adder[1].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[0].rca1|full_adder:gen_adder[2].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[0].rca1|full_adder:gen_adder[3].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[0].rca1|full_adder:gen_adder[4].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[0].rca1|full_adder:gen_adder[5].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[0].rca1|full_adder:gen_adder[6].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[0].rca1|full_adder:gen_adder[7].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[8].rca0
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+c_in => carry[0].IN1
+sum[0] <= full_adder:gen_adder[0].full_adder.sum
+sum[1] <= full_adder:gen_adder[1].full_adder.sum
+sum[2] <= full_adder:gen_adder[2].full_adder.sum
+sum[3] <= full_adder:gen_adder[3].full_adder.sum
+sum[4] <= full_adder:gen_adder[4].full_adder.sum
+sum[5] <= full_adder:gen_adder[5].full_adder.sum
+sum[6] <= full_adder:gen_adder[6].full_adder.sum
+sum[7] <= full_adder:gen_adder[7].full_adder.sum
+c_out <= full_adder:gen_adder[7].full_adder.c_out
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[8].rca0|full_adder:gen_adder[0].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[8].rca0|full_adder:gen_adder[1].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[8].rca0|full_adder:gen_adder[2].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[8].rca0|full_adder:gen_adder[3].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[8].rca0|full_adder:gen_adder[4].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[8].rca0|full_adder:gen_adder[5].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[8].rca0|full_adder:gen_adder[6].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[8].rca0|full_adder:gen_adder[7].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[8].rca1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+c_in => carry[0].IN1
+sum[0] <= full_adder:gen_adder[0].full_adder.sum
+sum[1] <= full_adder:gen_adder[1].full_adder.sum
+sum[2] <= full_adder:gen_adder[2].full_adder.sum
+sum[3] <= full_adder:gen_adder[3].full_adder.sum
+sum[4] <= full_adder:gen_adder[4].full_adder.sum
+sum[5] <= full_adder:gen_adder[5].full_adder.sum
+sum[6] <= full_adder:gen_adder[6].full_adder.sum
+sum[7] <= full_adder:gen_adder[7].full_adder.sum
+c_out <= full_adder:gen_adder[7].full_adder.c_out
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[8].rca1|full_adder:gen_adder[0].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[8].rca1|full_adder:gen_adder[1].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[8].rca1|full_adder:gen_adder[2].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[8].rca1|full_adder:gen_adder[3].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[8].rca1|full_adder:gen_adder[4].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[8].rca1|full_adder:gen_adder[5].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[8].rca1|full_adder:gen_adder[6].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[8].rca1|full_adder:gen_adder[7].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[16].rca0
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+c_in => carry[0].IN1
+sum[0] <= full_adder:gen_adder[0].full_adder.sum
+sum[1] <= full_adder:gen_adder[1].full_adder.sum
+sum[2] <= full_adder:gen_adder[2].full_adder.sum
+sum[3] <= full_adder:gen_adder[3].full_adder.sum
+sum[4] <= full_adder:gen_adder[4].full_adder.sum
+sum[5] <= full_adder:gen_adder[5].full_adder.sum
+sum[6] <= full_adder:gen_adder[6].full_adder.sum
+sum[7] <= full_adder:gen_adder[7].full_adder.sum
+c_out <= full_adder:gen_adder[7].full_adder.c_out
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[16].rca0|full_adder:gen_adder[0].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[16].rca0|full_adder:gen_adder[1].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[16].rca0|full_adder:gen_adder[2].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[16].rca0|full_adder:gen_adder[3].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[16].rca0|full_adder:gen_adder[4].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[16].rca0|full_adder:gen_adder[5].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[16].rca0|full_adder:gen_adder[6].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[16].rca0|full_adder:gen_adder[7].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[16].rca1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+c_in => carry[0].IN1
+sum[0] <= full_adder:gen_adder[0].full_adder.sum
+sum[1] <= full_adder:gen_adder[1].full_adder.sum
+sum[2] <= full_adder:gen_adder[2].full_adder.sum
+sum[3] <= full_adder:gen_adder[3].full_adder.sum
+sum[4] <= full_adder:gen_adder[4].full_adder.sum
+sum[5] <= full_adder:gen_adder[5].full_adder.sum
+sum[6] <= full_adder:gen_adder[6].full_adder.sum
+sum[7] <= full_adder:gen_adder[7].full_adder.sum
+c_out <= full_adder:gen_adder[7].full_adder.c_out
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[16].rca1|full_adder:gen_adder[0].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[16].rca1|full_adder:gen_adder[1].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[16].rca1|full_adder:gen_adder[2].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[16].rca1|full_adder:gen_adder[3].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[16].rca1|full_adder:gen_adder[4].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[16].rca1|full_adder:gen_adder[5].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[16].rca1|full_adder:gen_adder[6].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[16].rca1|full_adder:gen_adder[7].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[24].rca0
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+c_in => carry[0].IN1
+sum[0] <= full_adder:gen_adder[0].full_adder.sum
+sum[1] <= full_adder:gen_adder[1].full_adder.sum
+sum[2] <= full_adder:gen_adder[2].full_adder.sum
+sum[3] <= full_adder:gen_adder[3].full_adder.sum
+sum[4] <= full_adder:gen_adder[4].full_adder.sum
+sum[5] <= full_adder:gen_adder[5].full_adder.sum
+sum[6] <= full_adder:gen_adder[6].full_adder.sum
+sum[7] <= full_adder:gen_adder[7].full_adder.sum
+c_out <= full_adder:gen_adder[7].full_adder.c_out
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[24].rca0|full_adder:gen_adder[0].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[24].rca0|full_adder:gen_adder[1].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[24].rca0|full_adder:gen_adder[2].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[24].rca0|full_adder:gen_adder[3].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[24].rca0|full_adder:gen_adder[4].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[24].rca0|full_adder:gen_adder[5].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[24].rca0|full_adder:gen_adder[6].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[24].rca0|full_adder:gen_adder[7].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[24].rca1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+c_in => carry[0].IN1
+sum[0] <= full_adder:gen_adder[0].full_adder.sum
+sum[1] <= full_adder:gen_adder[1].full_adder.sum
+sum[2] <= full_adder:gen_adder[2].full_adder.sum
+sum[3] <= full_adder:gen_adder[3].full_adder.sum
+sum[4] <= full_adder:gen_adder[4].full_adder.sum
+sum[5] <= full_adder:gen_adder[5].full_adder.sum
+sum[6] <= full_adder:gen_adder[6].full_adder.sum
+sum[7] <= full_adder:gen_adder[7].full_adder.sum
+c_out <= full_adder:gen_adder[7].full_adder.c_out
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[24].rca1|full_adder:gen_adder[0].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[24].rca1|full_adder:gen_adder[1].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[24].rca1|full_adder:gen_adder[2].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[24].rca1|full_adder:gen_adder[3].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[24].rca1|full_adder:gen_adder[4].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[24].rca1|full_adder:gen_adder[5].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[24].rca1|full_adder:gen_adder[6].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carryselect_adder|ripplecarry_adder:gen_rca[24].rca1|full_adder:gen_adder[7].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

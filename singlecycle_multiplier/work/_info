@@ -1,0 +1,186 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder
+vcarrylookahead_adder
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1659446791
+!i10b 1
+!s100 WZH91`B4<hozk:c_`[=NJ0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I:>_INO9;obQNT6GDkZ]B52
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier
+w1657810516
+8C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/carrylookahead_adder.sv
+FC:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/carrylookahead_adder.sv
+!i122 6
+L0 3 53
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1659446791.000000
+!s107 C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/carrylookahead_adder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/carrylookahead_adder.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+vcarrysave_adder
+R0
+R1
+!i10b 1
+!s100 ISJWaRZOLkePGNNf8OfL[1
+R2
+I^9e7RJ:EQe2iCJ7mlSK;33
+R3
+S1
+R4
+w1657809197
+8C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/carrysave_adder.sv
+FC:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/carrysave_adder.sv
+!i122 7
+L0 2 20
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/carrysave_adder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/carrysave_adder.sv|
+!i113 1
+R7
+R8
+vfull_adder
+R0
+Z9 !s110 1659446792
+!i10b 1
+!s100 Veee254c3IFYZg=hmz65k0
+R2
+I_zG>WR?LL]MF9foCLS72z0
+R3
+S1
+R4
+w1657640078
+8C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/full_adder.sv
+FC:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/full_adder.sv
+!i122 8
+L0 1 11
+R5
+r1
+!s85 0
+31
+Z10 !s108 1659446792.000000
+!s107 C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/full_adder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/full_adder.sv|
+!i113 1
+R7
+R8
+vlookaheadcarry_unit
+R0
+R9
+!i10b 1
+!s100 hklVmK?HWgT1EaX8K`8De0
+R2
+I4m7T>6ke=jO`U^4GRd4?90
+R3
+S1
+R4
+w1657808824
+8C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/lookaheadcarry_unit.sv
+FC:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/lookaheadcarry_unit.sv
+!i122 9
+L0 1 36
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/lookaheadcarry_unit.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/lookaheadcarry_unit.sv|
+!i113 1
+R7
+R8
+vmulti_adder
+R0
+R9
+!i10b 1
+!s100 f`jO=9U8OD:R1P?]L4>iO2
+R2
+IGEmPk3d99k71FgQVPJ6_53
+R3
+S1
+R4
+w1659308214
+8C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/multi_adder.sv
+FC:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/multi_adder.sv
+!i122 10
+L0 3 77
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/multi_adder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/multi_adder.sv|
+!i113 1
+R7
+R8
+vsinglecycle_multiplier
+R0
+R9
+!i10b 1
+!s100 4BoN6Wajgj_zPHW8QNE_:1
+R2
+Io7?H65gbdZD=mhi>aQga30
+R3
+S1
+R4
+w1659103403
+8C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/singlecycle_multiplier.sv
+FC:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/singlecycle_multiplier.sv
+!i122 11
+L0 2 22
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/singlecycle_multiplier.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/singlecycle_multiplier.sv|
+!i113 1
+R7
+R8
+vsinglecycle_multiplier_tb
+R0
+R9
+!i10b 1
+!s100 =elQ^JMfPj2io@NcHbSn83
+R2
+Illn_UUR;lR[2Sn?H6[4]m0
+R3
+S1
+R4
+w1659446661
+8C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/singlecycle_multiplier_tb.sv
+FC:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/singlecycle_multiplier_tb.sv
+!i122 12
+L0 2 38
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/singlecycle_multiplier_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/2000c/OneDrive/Documents/Code/VLSI/singlecycle_multiplier/singlecycle_multiplier_tb.sv|
+!i113 1
+R7
+R8

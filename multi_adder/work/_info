@@ -1,0 +1,161 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/2000c/OneDrive/Documents/Code/VLSI/carrysave_adder
+vcarrylookahead_adder
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1659446699
+!i10b 1
+!s100 WZH91`B4<hozk:c_`[=NJ0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IQ93EV3K`kzJ63Q7T?TW2@3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder
+w1657810516
+8C:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/carrylookahead_adder.sv
+FC:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/carrylookahead_adder.sv
+!i122 200
+L0 3 53
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1659446698.000000
+!s107 C:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/carrylookahead_adder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/carrylookahead_adder.sv|
+!i113 1
+Z6 o-work work -sv
+Z7 tCvgOpt 0
+vcarrysave_adder
+R0
+R1
+!i10b 1
+!s100 ISJWaRZOLkePGNNf8OfL[1
+R2
+IZYLonHc4KTaZ[BIBA=SWa0
+R3
+S1
+R4
+w1657809197
+8C:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/carrysave_adder.sv
+FC:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/carrysave_adder.sv
+!i122 201
+L0 2 20
+R5
+r1
+!s85 0
+31
+Z8 !s108 1659446699.000000
+!s107 C:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/carrysave_adder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/carrysave_adder.sv|
+!i113 1
+R6
+R7
+vfull_adder
+R0
+R1
+!i10b 1
+!s100 Veee254c3IFYZg=hmz65k0
+R2
+IZHfHCN7>c>P1D[=eeCUD:3
+R3
+S1
+R4
+w1657640078
+8C:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/full_adder.sv
+FC:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/full_adder.sv
+!i122 202
+L0 1 11
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/full_adder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/full_adder.sv|
+!i113 1
+R6
+R7
+vlookaheadcarry_unit
+R0
+R1
+!i10b 1
+!s100 hklVmK?HWgT1EaX8K`8De0
+R2
+ID7bReK2nEQ_V_`FA?FiHg2
+R3
+S1
+R4
+w1657808824
+8C:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/lookaheadcarry_unit.sv
+FC:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/lookaheadcarry_unit.sv
+!i122 203
+L0 1 36
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/lookaheadcarry_unit.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/lookaheadcarry_unit.sv|
+!i113 1
+R6
+R7
+vmulti_adder
+R0
+R1
+!i10b 1
+!s100 f`jO=9U8OD:R1P?]L4>iO2
+R2
+Ie1G^;U8kER<<8g]Qkl>EH2
+R3
+S1
+R4
+w1659308214
+8C:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/multi_adder.sv
+FC:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/multi_adder.sv
+!i122 204
+L0 3 77
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/multi_adder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/multi_adder.sv|
+!i113 1
+R6
+R7
+vmulti_adder_tb
+R0
+R1
+!i10b 1
+!s100 `9]fg8OCU]WDA2Qf^Vb>U2
+R2
+IHL]o6mm1A5Jdz]S61H@6h0
+R3
+S1
+R4
+w1659307783
+8C:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/multi_adder_tb.sv
+FC:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/multi_adder_tb.sv
+!i122 205
+L0 2 43
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/multi_adder_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/2000c/OneDrive/Documents/Code/VLSI/multi_adder/multi_adder_tb.sv|
+!i113 1
+R6
+R7

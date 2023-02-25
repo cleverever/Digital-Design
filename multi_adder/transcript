@@ -1,0 +1,7 @@
+# Compile of carrylookahead_adder.sv was successful.
+# Compile of carrysave_adder.sv was successful.
+# Compile of full_adder.sv was successful.
+# Compile of lookaheadcarry_unit.sv was successful.
+# Compile of multi_adder.sv was successful with warnings.
+# Compile of multi_adder_tb.sv was successful.
+# 6 compiles, 0 failed with no errors.

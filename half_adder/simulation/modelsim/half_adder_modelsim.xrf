@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/2000c/OneDrive/Documents/Code/VLSI/half_adder/half_adder.sv
+source_file = 1, C:/Users/2000c/OneDrive/Documents/Code/VLSI/half_adder/db/half_adder.cbx.xml
+design_name = half_adder
+instance = comp, \sum~output , sum~output, half_adder, 1
+instance = comp, \c_out~output , c_out~output, half_adder, 1
+instance = comp, \a~input , a~input, half_adder, 1
+instance = comp, \b~input , b~input, half_adder, 1
+instance = comp, \sum~0 , sum~0, half_adder, 1
+instance = comp, \c_out~0 , c_out~0, half_adder, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

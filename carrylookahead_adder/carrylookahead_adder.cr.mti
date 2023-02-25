@@ -1,0 +1,29 @@
+C:/Users/2000c/OneDrive/Documents/Code/VLSI/carrylookahead_adder/full_adder.sv {1 {vlog -work work -sv -stats=none C:/Users/2000c/OneDrive/Documents/Code/VLSI/carrylookahead_adder/full_adder.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module full_adder
+
+Top level modules:
+	full_adder
+
+} {} {}} C:/Users/2000c/OneDrive/Documents/Code/VLSI/carrylookahead_adder/lookaheadcarry_unit.sv {1 {vlog -work work -sv -stats=none C:/Users/2000c/OneDrive/Documents/Code/VLSI/carrylookahead_adder/lookaheadcarry_unit.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module lookaheadcarry_unit
+
+Top level modules:
+	lookaheadcarry_unit
+
+} {} {}} C:/Users/2000c/OneDrive/Documents/Code/VLSI/carrylookahead_adder/carrylookahead_adder.sv {1 {vlog -work work -sv -stats=none C:/Users/2000c/OneDrive/Documents/Code/VLSI/carrylookahead_adder/carrylookahead_adder.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module carrylookahead_adder
+
+Top level modules:
+	carrylookahead_adder
+
+} {} {}} C:/Users/2000c/OneDrive/Documents/Code/VLSI/carrylookahead_adder/carrylookahead_adder_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/2000c/OneDrive/Documents/Code/VLSI/carrylookahead_adder/carrylookahead_adder_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module carrylookahead_adder_tb
+
+Top level modules:
+	carrylookahead_adder_tb
+
+} {} {}}

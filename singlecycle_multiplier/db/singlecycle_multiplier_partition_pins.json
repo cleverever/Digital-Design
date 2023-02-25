@@ -1,0 +1,137 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "result[0]",
+					"strict" : false
+				},
+				{
+					"name" : "result[1]",
+					"strict" : false
+				},
+				{
+					"name" : "result[2]",
+					"strict" : false
+				},
+				{
+					"name" : "result[3]",
+					"strict" : false
+				},
+				{
+					"name" : "result[4]",
+					"strict" : false
+				},
+				{
+					"name" : "result[5]",
+					"strict" : false
+				},
+				{
+					"name" : "result[6]",
+					"strict" : false
+				},
+				{
+					"name" : "result[7]",
+					"strict" : false
+				},
+				{
+					"name" : "result[8]",
+					"strict" : false
+				},
+				{
+					"name" : "result[9]",
+					"strict" : false
+				},
+				{
+					"name" : "result[10]",
+					"strict" : false
+				},
+				{
+					"name" : "result[11]",
+					"strict" : false
+				},
+				{
+					"name" : "result[12]",
+					"strict" : false
+				},
+				{
+					"name" : "result[13]",
+					"strict" : false
+				},
+				{
+					"name" : "result[14]",
+					"strict" : false
+				},
+				{
+					"name" : "result[15]",
+					"strict" : false
+				},
+				{
+					"name" : "in0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "in1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "in0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "in1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "in1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "in0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "in1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "in0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "in0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "in1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "in0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "in1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "in0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "in1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "in0[7]",
+					"strict" : false
+				},
+				{
+					"name" : "in1[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

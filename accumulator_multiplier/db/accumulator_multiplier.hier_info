@@ -1,0 +1,2947 @@
+|accumulator_multiplier
+clock => clock.IN1
+reset => reset.IN1
+multiplicand[0] => ShiftLeft0.IN64
+multiplicand[1] => ShiftLeft0.IN63
+multiplicand[2] => ShiftLeft0.IN62
+multiplicand[3] => ShiftLeft0.IN61
+multiplicand[4] => ShiftLeft0.IN60
+multiplicand[5] => ShiftLeft0.IN59
+multiplicand[6] => ShiftLeft0.IN58
+multiplicand[7] => ShiftLeft0.IN57
+multiplicand[8] => ShiftLeft0.IN56
+multiplicand[9] => ShiftLeft0.IN55
+multiplicand[10] => ShiftLeft0.IN54
+multiplicand[11] => ShiftLeft0.IN53
+multiplicand[12] => ShiftLeft0.IN52
+multiplicand[13] => ShiftLeft0.IN51
+multiplicand[14] => ShiftLeft0.IN50
+multiplicand[15] => ShiftLeft0.IN49
+multiplicand[16] => ShiftLeft0.IN48
+multiplicand[17] => ShiftLeft0.IN47
+multiplicand[18] => ShiftLeft0.IN46
+multiplicand[19] => ShiftLeft0.IN45
+multiplicand[20] => ShiftLeft0.IN44
+multiplicand[21] => ShiftLeft0.IN43
+multiplicand[22] => ShiftLeft0.IN42
+multiplicand[23] => ShiftLeft0.IN41
+multiplicand[24] => ShiftLeft0.IN40
+multiplicand[25] => ShiftLeft0.IN39
+multiplicand[26] => ShiftLeft0.IN38
+multiplicand[27] => ShiftLeft0.IN37
+multiplicand[28] => ShiftLeft0.IN36
+multiplicand[29] => ShiftLeft0.IN35
+multiplicand[30] => ShiftLeft0.IN34
+multiplicand[31] => ShiftLeft0.IN33
+multiplier[0] => Mux0.IN31
+multiplier[1] => Mux0.IN30
+multiplier[2] => Mux0.IN29
+multiplier[3] => Mux0.IN28
+multiplier[4] => Mux0.IN27
+multiplier[5] => Mux0.IN26
+multiplier[6] => Mux0.IN25
+multiplier[7] => Mux0.IN24
+multiplier[8] => Mux0.IN23
+multiplier[9] => Mux0.IN22
+multiplier[10] => Mux0.IN21
+multiplier[11] => Mux0.IN20
+multiplier[12] => Mux0.IN19
+multiplier[13] => Mux0.IN18
+multiplier[14] => Mux0.IN17
+multiplier[15] => Mux0.IN16
+multiplier[16] => Mux0.IN15
+multiplier[17] => Mux0.IN14
+multiplier[18] => Mux0.IN13
+multiplier[19] => Mux0.IN12
+multiplier[20] => Mux0.IN11
+multiplier[21] => Mux0.IN10
+multiplier[22] => Mux0.IN9
+multiplier[23] => Mux0.IN8
+multiplier[24] => Mux0.IN7
+multiplier[25] => Mux0.IN6
+multiplier[26] => Mux0.IN5
+multiplier[27] => Mux0.IN4
+multiplier[28] => Mux0.IN3
+multiplier[29] => Mux0.IN2
+multiplier[30] => Mux0.IN1
+multiplier[31] => Mux0.IN0
+out[0] <= accumulator:accumulator.out
+out[1] <= accumulator:accumulator.out
+out[2] <= accumulator:accumulator.out
+out[3] <= accumulator:accumulator.out
+out[4] <= accumulator:accumulator.out
+out[5] <= accumulator:accumulator.out
+out[6] <= accumulator:accumulator.out
+out[7] <= accumulator:accumulator.out
+out[8] <= accumulator:accumulator.out
+out[9] <= accumulator:accumulator.out
+out[10] <= accumulator:accumulator.out
+out[11] <= accumulator:accumulator.out
+out[12] <= accumulator:accumulator.out
+out[13] <= accumulator:accumulator.out
+out[14] <= accumulator:accumulator.out
+out[15] <= accumulator:accumulator.out
+out[16] <= accumulator:accumulator.out
+out[17] <= accumulator:accumulator.out
+out[18] <= accumulator:accumulator.out
+out[19] <= accumulator:accumulator.out
+out[20] <= accumulator:accumulator.out
+out[21] <= accumulator:accumulator.out
+out[22] <= accumulator:accumulator.out
+out[23] <= accumulator:accumulator.out
+out[24] <= accumulator:accumulator.out
+out[25] <= accumulator:accumulator.out
+out[26] <= accumulator:accumulator.out
+out[27] <= accumulator:accumulator.out
+out[28] <= accumulator:accumulator.out
+out[29] <= accumulator:accumulator.out
+out[30] <= accumulator:accumulator.out
+out[31] <= accumulator:accumulator.out
+out[32] <= accumulator:accumulator.out
+out[33] <= accumulator:accumulator.out
+out[34] <= accumulator:accumulator.out
+out[35] <= accumulator:accumulator.out
+out[36] <= accumulator:accumulator.out
+out[37] <= accumulator:accumulator.out
+out[38] <= accumulator:accumulator.out
+out[39] <= accumulator:accumulator.out
+out[40] <= accumulator:accumulator.out
+out[41] <= accumulator:accumulator.out
+out[42] <= accumulator:accumulator.out
+out[43] <= accumulator:accumulator.out
+out[44] <= accumulator:accumulator.out
+out[45] <= accumulator:accumulator.out
+out[46] <= accumulator:accumulator.out
+out[47] <= accumulator:accumulator.out
+out[48] <= accumulator:accumulator.out
+out[49] <= accumulator:accumulator.out
+out[50] <= accumulator:accumulator.out
+out[51] <= accumulator:accumulator.out
+out[52] <= accumulator:accumulator.out
+out[53] <= accumulator:accumulator.out
+out[54] <= accumulator:accumulator.out
+out[55] <= accumulator:accumulator.out
+out[56] <= accumulator:accumulator.out
+out[57] <= accumulator:accumulator.out
+out[58] <= accumulator:accumulator.out
+out[59] <= accumulator:accumulator.out
+out[60] <= accumulator:accumulator.out
+out[61] <= accumulator:accumulator.out
+out[62] <= accumulator:accumulator.out
+out[63] <= accumulator:accumulator.out
+done <= done~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator
+clock => v_reg[0].CLK
+clock => v_reg[1].CLK
+clock => v_reg[2].CLK
+clock => v_reg[3].CLK
+clock => v_reg[4].CLK
+clock => v_reg[5].CLK
+clock => v_reg[6].CLK
+clock => v_reg[7].CLK
+clock => v_reg[8].CLK
+clock => v_reg[9].CLK
+clock => v_reg[10].CLK
+clock => v_reg[11].CLK
+clock => v_reg[12].CLK
+clock => v_reg[13].CLK
+clock => v_reg[14].CLK
+clock => v_reg[15].CLK
+clock => v_reg[16].CLK
+clock => v_reg[17].CLK
+clock => v_reg[18].CLK
+clock => v_reg[19].CLK
+clock => v_reg[20].CLK
+clock => v_reg[21].CLK
+clock => v_reg[22].CLK
+clock => v_reg[23].CLK
+clock => v_reg[24].CLK
+clock => v_reg[25].CLK
+clock => v_reg[26].CLK
+clock => v_reg[27].CLK
+clock => v_reg[28].CLK
+clock => v_reg[29].CLK
+clock => v_reg[30].CLK
+clock => v_reg[31].CLK
+clock => v_reg[32].CLK
+clock => u_reg[0].CLK
+clock => u_reg[1].CLK
+clock => u_reg[2].CLK
+clock => u_reg[3].CLK
+clock => u_reg[4].CLK
+clock => u_reg[5].CLK
+clock => u_reg[6].CLK
+clock => u_reg[7].CLK
+clock => u_reg[8].CLK
+clock => u_reg[9].CLK
+clock => u_reg[10].CLK
+clock => u_reg[11].CLK
+clock => u_reg[12].CLK
+clock => u_reg[13].CLK
+clock => u_reg[14].CLK
+clock => u_reg[15].CLK
+clock => u_reg[16].CLK
+clock => u_reg[17].CLK
+clock => u_reg[18].CLK
+clock => u_reg[19].CLK
+clock => u_reg[20].CLK
+clock => u_reg[21].CLK
+clock => u_reg[22].CLK
+clock => u_reg[23].CLK
+clock => u_reg[24].CLK
+clock => u_reg[25].CLK
+clock => u_reg[26].CLK
+clock => u_reg[27].CLK
+clock => u_reg[28].CLK
+clock => u_reg[29].CLK
+clock => u_reg[30].CLK
+clock => u_reg[31].CLK
+reset => v_reg[0].ACLR
+reset => v_reg[1].ACLR
+reset => v_reg[2].ACLR
+reset => v_reg[3].ACLR
+reset => v_reg[4].ACLR
+reset => v_reg[5].ACLR
+reset => v_reg[6].ACLR
+reset => v_reg[7].ACLR
+reset => v_reg[8].ACLR
+reset => v_reg[9].ACLR
+reset => v_reg[10].ACLR
+reset => v_reg[11].ACLR
+reset => v_reg[12].ACLR
+reset => v_reg[13].ACLR
+reset => v_reg[14].ACLR
+reset => v_reg[15].ACLR
+reset => v_reg[16].ACLR
+reset => v_reg[17].ACLR
+reset => v_reg[18].ACLR
+reset => v_reg[19].ACLR
+reset => v_reg[20].ACLR
+reset => v_reg[21].ACLR
+reset => v_reg[22].ACLR
+reset => v_reg[23].ACLR
+reset => v_reg[24].ACLR
+reset => v_reg[25].ACLR
+reset => v_reg[26].ACLR
+reset => v_reg[27].ACLR
+reset => v_reg[28].ACLR
+reset => v_reg[29].ACLR
+reset => v_reg[30].ACLR
+reset => v_reg[31].ACLR
+reset => v_reg[32].ACLR
+reset => u_reg[0].ACLR
+reset => u_reg[1].ACLR
+reset => u_reg[2].ACLR
+reset => u_reg[3].ACLR
+reset => u_reg[4].ACLR
+reset => u_reg[5].ACLR
+reset => u_reg[6].ACLR
+reset => u_reg[7].ACLR
+reset => u_reg[8].ACLR
+reset => u_reg[9].ACLR
+reset => u_reg[10].ACLR
+reset => u_reg[11].ACLR
+reset => u_reg[12].ACLR
+reset => u_reg[13].ACLR
+reset => u_reg[14].ACLR
+reset => u_reg[15].ACLR
+reset => u_reg[16].ACLR
+reset => u_reg[17].ACLR
+reset => u_reg[18].ACLR
+reset => u_reg[19].ACLR
+reset => u_reg[20].ACLR
+reset => u_reg[21].ACLR
+reset => u_reg[22].ACLR
+reset => u_reg[23].ACLR
+reset => u_reg[24].ACLR
+reset => u_reg[25].ACLR
+reset => u_reg[26].ACLR
+reset => u_reg[27].ACLR
+reset => u_reg[28].ACLR
+reset => u_reg[29].ACLR
+reset => u_reg[30].ACLR
+reset => u_reg[31].ACLR
+in[0] => in[0].IN1
+in[1] => in[1].IN1
+in[2] => in[2].IN1
+in[3] => in[3].IN1
+in[4] => in[4].IN1
+in[5] => in[5].IN1
+in[6] => in[6].IN1
+in[7] => in[7].IN1
+in[8] => in[8].IN1
+in[9] => in[9].IN1
+in[10] => in[10].IN1
+in[11] => in[11].IN1
+in[12] => in[12].IN1
+in[13] => in[13].IN1
+in[14] => in[14].IN1
+in[15] => in[15].IN1
+in[16] => in[16].IN1
+in[17] => in[17].IN1
+in[18] => in[18].IN1
+in[19] => in[19].IN1
+in[20] => in[20].IN1
+in[21] => in[21].IN1
+in[22] => in[22].IN1
+in[23] => in[23].IN1
+in[24] => in[24].IN1
+in[25] => in[25].IN1
+in[26] => in[26].IN1
+in[27] => in[27].IN1
+in[28] => in[28].IN1
+in[29] => in[29].IN1
+in[30] => in[30].IN1
+in[31] => in[31].IN1
+out[0] <= carrylookahead_adder:cla.sum
+out[1] <= carrylookahead_adder:cla.sum
+out[2] <= carrylookahead_adder:cla.sum
+out[3] <= carrylookahead_adder:cla.sum
+out[4] <= carrylookahead_adder:cla.sum
+out[5] <= carrylookahead_adder:cla.sum
+out[6] <= carrylookahead_adder:cla.sum
+out[7] <= carrylookahead_adder:cla.sum
+out[8] <= carrylookahead_adder:cla.sum
+out[9] <= carrylookahead_adder:cla.sum
+out[10] <= carrylookahead_adder:cla.sum
+out[11] <= carrylookahead_adder:cla.sum
+out[12] <= carrylookahead_adder:cla.sum
+out[13] <= carrylookahead_adder:cla.sum
+out[14] <= carrylookahead_adder:cla.sum
+out[15] <= carrylookahead_adder:cla.sum
+out[16] <= carrylookahead_adder:cla.sum
+out[17] <= carrylookahead_adder:cla.sum
+out[18] <= carrylookahead_adder:cla.sum
+out[19] <= carrylookahead_adder:cla.sum
+out[20] <= carrylookahead_adder:cla.sum
+out[21] <= carrylookahead_adder:cla.sum
+out[22] <= carrylookahead_adder:cla.sum
+out[23] <= carrylookahead_adder:cla.sum
+out[24] <= carrylookahead_adder:cla.sum
+out[25] <= carrylookahead_adder:cla.sum
+out[26] <= carrylookahead_adder:cla.sum
+out[27] <= carrylookahead_adder:cla.sum
+out[28] <= carrylookahead_adder:cla.sum
+out[29] <= carrylookahead_adder:cla.sum
+out[30] <= carrylookahead_adder:cla.sum
+out[31] <= carrylookahead_adder:cla.sum
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+a[16] => a[16].IN1
+a[17] => a[17].IN1
+a[18] => a[18].IN1
+a[19] => a[19].IN1
+a[20] => a[20].IN1
+a[21] => a[21].IN1
+a[22] => a[22].IN1
+a[23] => a[23].IN1
+a[24] => a[24].IN1
+a[25] => a[25].IN1
+a[26] => a[26].IN1
+a[27] => a[27].IN1
+a[28] => a[28].IN1
+a[29] => a[29].IN1
+a[30] => a[30].IN1
+a[31] => a[31].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+b[15] => b[15].IN1
+b[16] => b[16].IN1
+b[17] => b[17].IN1
+b[18] => b[18].IN1
+b[19] => b[19].IN1
+b[20] => b[20].IN1
+b[21] => b[21].IN1
+b[22] => b[22].IN1
+b[23] => b[23].IN1
+b[24] => b[24].IN1
+b[25] => b[25].IN1
+b[26] => b[26].IN1
+b[27] => b[27].IN1
+b[28] => b[28].IN1
+b[29] => b[29].IN1
+b[30] => b[30].IN1
+b[31] => b[31].IN1
+c[0] => c[0].IN1
+c[1] => c[1].IN1
+c[2] => c[2].IN1
+c[3] => c[3].IN1
+c[4] => c[4].IN1
+c[5] => c[5].IN1
+c[6] => c[6].IN1
+c[7] => c[7].IN1
+c[8] => c[8].IN1
+c[9] => c[9].IN1
+c[10] => c[10].IN1
+c[11] => c[11].IN1
+c[12] => c[12].IN1
+c[13] => c[13].IN1
+c[14] => c[14].IN1
+c[15] => c[15].IN1
+c[16] => c[16].IN1
+c[17] => c[17].IN1
+c[18] => c[18].IN1
+c[19] => c[19].IN1
+c[20] => c[20].IN1
+c[21] => c[21].IN1
+c[22] => c[22].IN1
+c[23] => c[23].IN1
+c[24] => c[24].IN1
+c[25] => c[25].IN1
+c[26] => c[26].IN1
+c[27] => c[27].IN1
+c[28] => c[28].IN1
+c[29] => c[29].IN1
+c[30] => c[30].IN1
+c[31] => c[31].IN1
+sum[0] <= full_adder:gen_adders[0].full_adder.sum
+sum[1] <= full_adder:gen_adders[1].full_adder.sum
+sum[2] <= full_adder:gen_adders[2].full_adder.sum
+sum[3] <= full_adder:gen_adders[3].full_adder.sum
+sum[4] <= full_adder:gen_adders[4].full_adder.sum
+sum[5] <= full_adder:gen_adders[5].full_adder.sum
+sum[6] <= full_adder:gen_adders[6].full_adder.sum
+sum[7] <= full_adder:gen_adders[7].full_adder.sum
+sum[8] <= full_adder:gen_adders[8].full_adder.sum
+sum[9] <= full_adder:gen_adders[9].full_adder.sum
+sum[10] <= full_adder:gen_adders[10].full_adder.sum
+sum[11] <= full_adder:gen_adders[11].full_adder.sum
+sum[12] <= full_adder:gen_adders[12].full_adder.sum
+sum[13] <= full_adder:gen_adders[13].full_adder.sum
+sum[14] <= full_adder:gen_adders[14].full_adder.sum
+sum[15] <= full_adder:gen_adders[15].full_adder.sum
+sum[16] <= full_adder:gen_adders[16].full_adder.sum
+sum[17] <= full_adder:gen_adders[17].full_adder.sum
+sum[18] <= full_adder:gen_adders[18].full_adder.sum
+sum[19] <= full_adder:gen_adders[19].full_adder.sum
+sum[20] <= full_adder:gen_adders[20].full_adder.sum
+sum[21] <= full_adder:gen_adders[21].full_adder.sum
+sum[22] <= full_adder:gen_adders[22].full_adder.sum
+sum[23] <= full_adder:gen_adders[23].full_adder.sum
+sum[24] <= full_adder:gen_adders[24].full_adder.sum
+sum[25] <= full_adder:gen_adders[25].full_adder.sum
+sum[26] <= full_adder:gen_adders[26].full_adder.sum
+sum[27] <= full_adder:gen_adders[27].full_adder.sum
+sum[28] <= full_adder:gen_adders[28].full_adder.sum
+sum[29] <= full_adder:gen_adders[29].full_adder.sum
+sum[30] <= full_adder:gen_adders[30].full_adder.sum
+sum[31] <= full_adder:gen_adders[31].full_adder.sum
+carry[0] <= full_adder:gen_adders[0].full_adder.c_out
+carry[1] <= full_adder:gen_adders[1].full_adder.c_out
+carry[2] <= full_adder:gen_adders[2].full_adder.c_out
+carry[3] <= full_adder:gen_adders[3].full_adder.c_out
+carry[4] <= full_adder:gen_adders[4].full_adder.c_out
+carry[5] <= full_adder:gen_adders[5].full_adder.c_out
+carry[6] <= full_adder:gen_adders[6].full_adder.c_out
+carry[7] <= full_adder:gen_adders[7].full_adder.c_out
+carry[8] <= full_adder:gen_adders[8].full_adder.c_out
+carry[9] <= full_adder:gen_adders[9].full_adder.c_out
+carry[10] <= full_adder:gen_adders[10].full_adder.c_out
+carry[11] <= full_adder:gen_adders[11].full_adder.c_out
+carry[12] <= full_adder:gen_adders[12].full_adder.c_out
+carry[13] <= full_adder:gen_adders[13].full_adder.c_out
+carry[14] <= full_adder:gen_adders[14].full_adder.c_out
+carry[15] <= full_adder:gen_adders[15].full_adder.c_out
+carry[16] <= full_adder:gen_adders[16].full_adder.c_out
+carry[17] <= full_adder:gen_adders[17].full_adder.c_out
+carry[18] <= full_adder:gen_adders[18].full_adder.c_out
+carry[19] <= full_adder:gen_adders[19].full_adder.c_out
+carry[20] <= full_adder:gen_adders[20].full_adder.c_out
+carry[21] <= full_adder:gen_adders[21].full_adder.c_out
+carry[22] <= full_adder:gen_adders[22].full_adder.c_out
+carry[23] <= full_adder:gen_adders[23].full_adder.c_out
+carry[24] <= full_adder:gen_adders[24].full_adder.c_out
+carry[25] <= full_adder:gen_adders[25].full_adder.c_out
+carry[26] <= full_adder:gen_adders[26].full_adder.c_out
+carry[27] <= full_adder:gen_adders[27].full_adder.c_out
+carry[28] <= full_adder:gen_adders[28].full_adder.c_out
+carry[29] <= full_adder:gen_adders[29].full_adder.c_out
+carry[30] <= full_adder:gen_adders[30].full_adder.c_out
+carry[31] <= full_adder:gen_adders[31].full_adder.c_out
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[0].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[1].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[2].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[3].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[4].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[5].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[6].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[7].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[8].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[9].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[10].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[11].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[12].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[13].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[14].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[15].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[16].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[17].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[18].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[19].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[20].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[21].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[22].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[23].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[24].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[25].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[26].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[27].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[28].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[29].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[30].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrysave_adder:csa|full_adder:gen_adders[31].full_adder
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+a[16] => a[16].IN1
+a[17] => a[17].IN1
+a[18] => a[18].IN1
+a[19] => a[19].IN1
+a[20] => a[20].IN1
+a[21] => a[21].IN1
+a[22] => a[22].IN1
+a[23] => a[23].IN1
+a[24] => a[24].IN1
+a[25] => a[25].IN1
+a[26] => a[26].IN1
+a[27] => a[27].IN1
+a[28] => a[28].IN1
+a[29] => a[29].IN1
+a[30] => a[30].IN1
+a[31] => a[31].IN1
+a[32] => a[32].IN1
+a[33] => a[33].IN1
+a[34] => a[34].IN1
+a[35] => a[35].IN1
+a[36] => a[36].IN1
+a[37] => a[37].IN1
+a[38] => a[38].IN1
+a[39] => a[39].IN1
+a[40] => a[40].IN1
+a[41] => a[41].IN1
+a[42] => a[42].IN1
+a[43] => a[43].IN1
+a[44] => a[44].IN1
+a[45] => a[45].IN1
+a[46] => a[46].IN1
+a[47] => a[47].IN1
+a[48] => a[48].IN1
+a[49] => a[49].IN1
+a[50] => a[50].IN1
+a[51] => a[51].IN1
+a[52] => a[52].IN1
+a[53] => a[53].IN1
+a[54] => a[54].IN1
+a[55] => a[55].IN1
+a[56] => a[56].IN1
+a[57] => a[57].IN1
+a[58] => a[58].IN1
+a[59] => a[59].IN1
+a[60] => a[60].IN1
+a[61] => a[61].IN1
+a[62] => a[62].IN1
+a[63] => a[63].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+b[15] => b[15].IN1
+b[16] => b[16].IN1
+b[17] => b[17].IN1
+b[18] => b[18].IN1
+b[19] => b[19].IN1
+b[20] => b[20].IN1
+b[21] => b[21].IN1
+b[22] => b[22].IN1
+b[23] => b[23].IN1
+b[24] => b[24].IN1
+b[25] => b[25].IN1
+b[26] => b[26].IN1
+b[27] => b[27].IN1
+b[28] => b[28].IN1
+b[29] => b[29].IN1
+b[30] => b[30].IN1
+b[31] => b[31].IN1
+b[32] => b[32].IN1
+b[33] => b[33].IN1
+b[34] => b[34].IN1
+b[35] => b[35].IN1
+b[36] => b[36].IN1
+b[37] => b[37].IN1
+b[38] => b[38].IN1
+b[39] => b[39].IN1
+b[40] => b[40].IN1
+b[41] => b[41].IN1
+b[42] => b[42].IN1
+b[43] => b[43].IN1
+b[44] => b[44].IN1
+b[45] => b[45].IN1
+b[46] => b[46].IN1
+b[47] => b[47].IN1
+b[48] => b[48].IN1
+b[49] => b[49].IN1
+b[50] => b[50].IN1
+b[51] => b[51].IN1
+b[52] => b[52].IN1
+b[53] => b[53].IN1
+b[54] => b[54].IN1
+b[55] => b[55].IN1
+b[56] => b[56].IN1
+b[57] => b[57].IN1
+b[58] => b[58].IN1
+b[59] => b[59].IN1
+b[60] => b[60].IN1
+b[61] => b[61].IN1
+b[62] => b[62].IN1
+b[63] => b[63].IN1
+c_in => carry[3][0].IN4
+sum[0] <= full_adder:adders[0].fa.sum
+sum[1] <= full_adder:adders[1].fa.sum
+sum[2] <= full_adder:adders[2].fa.sum
+sum[3] <= full_adder:adders[3].fa.sum
+sum[4] <= full_adder:adders[4].fa.sum
+sum[5] <= full_adder:adders[5].fa.sum
+sum[6] <= full_adder:adders[6].fa.sum
+sum[7] <= full_adder:adders[7].fa.sum
+sum[8] <= full_adder:adders[8].fa.sum
+sum[9] <= full_adder:adders[9].fa.sum
+sum[10] <= full_adder:adders[10].fa.sum
+sum[11] <= full_adder:adders[11].fa.sum
+sum[12] <= full_adder:adders[12].fa.sum
+sum[13] <= full_adder:adders[13].fa.sum
+sum[14] <= full_adder:adders[14].fa.sum
+sum[15] <= full_adder:adders[15].fa.sum
+sum[16] <= full_adder:adders[16].fa.sum
+sum[17] <= full_adder:adders[17].fa.sum
+sum[18] <= full_adder:adders[18].fa.sum
+sum[19] <= full_adder:adders[19].fa.sum
+sum[20] <= full_adder:adders[20].fa.sum
+sum[21] <= full_adder:adders[21].fa.sum
+sum[22] <= full_adder:adders[22].fa.sum
+sum[23] <= full_adder:adders[23].fa.sum
+sum[24] <= full_adder:adders[24].fa.sum
+sum[25] <= full_adder:adders[25].fa.sum
+sum[26] <= full_adder:adders[26].fa.sum
+sum[27] <= full_adder:adders[27].fa.sum
+sum[28] <= full_adder:adders[28].fa.sum
+sum[29] <= full_adder:adders[29].fa.sum
+sum[30] <= full_adder:adders[30].fa.sum
+sum[31] <= full_adder:adders[31].fa.sum
+sum[32] <= full_adder:adders[32].fa.sum
+sum[33] <= full_adder:adders[33].fa.sum
+sum[34] <= full_adder:adders[34].fa.sum
+sum[35] <= full_adder:adders[35].fa.sum
+sum[36] <= full_adder:adders[36].fa.sum
+sum[37] <= full_adder:adders[37].fa.sum
+sum[38] <= full_adder:adders[38].fa.sum
+sum[39] <= full_adder:adders[39].fa.sum
+sum[40] <= full_adder:adders[40].fa.sum
+sum[41] <= full_adder:adders[41].fa.sum
+sum[42] <= full_adder:adders[42].fa.sum
+sum[43] <= full_adder:adders[43].fa.sum
+sum[44] <= full_adder:adders[44].fa.sum
+sum[45] <= full_adder:adders[45].fa.sum
+sum[46] <= full_adder:adders[46].fa.sum
+sum[47] <= full_adder:adders[47].fa.sum
+sum[48] <= full_adder:adders[48].fa.sum
+sum[49] <= full_adder:adders[49].fa.sum
+sum[50] <= full_adder:adders[50].fa.sum
+sum[51] <= full_adder:adders[51].fa.sum
+sum[52] <= full_adder:adders[52].fa.sum
+sum[53] <= full_adder:adders[53].fa.sum
+sum[54] <= full_adder:adders[54].fa.sum
+sum[55] <= full_adder:adders[55].fa.sum
+sum[56] <= full_adder:adders[56].fa.sum
+sum[57] <= full_adder:adders[57].fa.sum
+sum[58] <= full_adder:adders[58].fa.sum
+sum[59] <= full_adder:adders[59].fa.sum
+sum[60] <= full_adder:adders[60].fa.sum
+sum[61] <= full_adder:adders[61].fa.sum
+sum[62] <= full_adder:adders[62].fa.sum
+sum[63] <= full_adder:adders[63].fa.sum
+c_out <= lookaheadcarry_unit:level[3].lookahead[0].lcu.c_out
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[0].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[1].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[2].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[3].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[4].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[5].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[6].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[7].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[8].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[9].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[10].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[11].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[12].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[13].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[14].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[15].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[16].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[17].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[18].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[19].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[20].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[21].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[22].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[23].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[24].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[25].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[26].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[27].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[28].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[29].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[30].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[31].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[32].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[33].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[34].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[35].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[36].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[37].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[38].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[39].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[40].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[41].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[42].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[43].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[44].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[45].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[46].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[47].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[48].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[49].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[50].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[51].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[52].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[53].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[54].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[55].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[56].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[57].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[58].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[59].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[60].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[61].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[62].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|full_adder:adders[63].fa
+a => g.IN0
+a => p.IN0
+b => g.IN1
+b => p.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[1].lookahead[0].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[1].lookahead[1].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[1].lookahead[2].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[1].lookahead[3].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[1].lookahead[4].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[1].lookahead[5].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[1].lookahead[6].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[1].lookahead[7].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[1].lookahead[8].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[1].lookahead[9].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[1].lookahead[10].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[1].lookahead[11].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[1].lookahead[12].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[1].lookahead[13].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[1].lookahead[14].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[1].lookahead[15].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[2].lookahead[0].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[2].lookahead[1].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[2].lookahead[2].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[2].lookahead[3].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator_multiplier|accumulator:accumulator|carrylookahead_adder:cla|lookaheadcarry_unit:level[3].lookahead[0].lcu
+g[0] => carries[1].prop_carry[2].IN0
+g[0] => carries[2].prop_carry[2].IN1
+g[0] => carries[3].prop_carry[2].IN1
+g[0] => prop_gens[1].IN1
+g[0] => WideOr1.IN1
+g[1] => carries[2].prop_carry[3].IN0
+g[1] => carries[3].prop_carry[3].IN1
+g[1] => prop_gens[2].IN1
+g[1] => WideOr2.IN2
+g[2] => carries[3].prop_carry[4].IN0
+g[2] => prop_gens[3].IN0
+g[2] => WideOr3.IN3
+g[3] => WideOr4.IN4
+g[3] => WideOr0.IN3
+p[0] => carries[0].prop_carry[1].IN0
+p[0] => WideAnd0.IN0
+p[0] => WideAnd1.IN0
+p[0] => WideAnd3.IN0
+p[1] => WideAnd0.IN1
+p[1] => carries[1].prop_carry[2].IN1
+p[1] => WideAnd1.IN1
+p[1] => WideAnd2.IN0
+p[1] => WideAnd3.IN1
+p[1] => WideAnd4.IN0
+p[2] => WideAnd1.IN2
+p[2] => WideAnd2.IN1
+p[2] => carries[2].prop_carry[3].IN1
+p[2] => WideAnd3.IN2
+p[2] => WideAnd4.IN1
+p[2] => WideAnd5.IN0
+p[3] => WideAnd3.IN3
+p[3] => WideAnd4.IN2
+p[3] => WideAnd5.IN1
+p[3] => carries[3].prop_carry[4].IN1
+p[3] => prop_gens[3].IN1
+c_in => carries[0].prop_carry[1].IN1
+c_in => carries[1].prop_carry[1].IN1
+c_in => carries[2].prop_carry[1].IN1
+c_in => carries[3].prop_carry[1].IN1
+c_out[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_out[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+GG <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+PG <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+
+

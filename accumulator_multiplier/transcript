@@ -1,0 +1,16 @@
+# Compile of mux.sv was successful with warnings.
+# Compile of parity_unit_16_bit.sv was successful.
+# Compile of status_unit.sv was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of mux.sv was successful with warnings.
+# Compile of regfile.sv failed with 6 errors.
+# 2 compiles, 1 failed with 6 errors.
+# Compile of mux.sv was successful with warnings.
+# Compile of regfile.sv failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of mux.sv was successful with warnings.
+# Compile of regfile.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of mux.sv was successful with warnings.
+# Compile of regfile.sv failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors.

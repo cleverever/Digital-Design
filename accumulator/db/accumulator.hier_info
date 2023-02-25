@@ -1,0 +1,1178 @@
+|accumulator
+clock => v_reg[0].CLK
+clock => v_reg[1].CLK
+clock => v_reg[2].CLK
+clock => v_reg[3].CLK
+clock => v_reg[4].CLK
+clock => v_reg[5].CLK
+clock => v_reg[6].CLK
+clock => v_reg[7].CLK
+clock => v_reg[8].CLK
+clock => v_reg[9].CLK
+clock => v_reg[10].CLK
+clock => v_reg[11].CLK
+clock => v_reg[12].CLK
+clock => v_reg[13].CLK
+clock => v_reg[14].CLK
+clock => v_reg[15].CLK
+clock => v_reg[16].CLK
+clock => v_reg[17].CLK
+clock => v_reg[18].CLK
+clock => v_reg[19].CLK
+clock => v_reg[20].CLK
+clock => v_reg[21].CLK
+clock => v_reg[22].CLK
+clock => v_reg[23].CLK
+clock => v_reg[24].CLK
+clock => v_reg[25].CLK
+clock => v_reg[26].CLK
+clock => v_reg[27].CLK
+clock => v_reg[28].CLK
+clock => v_reg[29].CLK
+clock => v_reg[30].CLK
+clock => v_reg[31].CLK
+clock => u_reg[0].CLK
+clock => u_reg[1].CLK
+clock => u_reg[2].CLK
+clock => u_reg[3].CLK
+clock => u_reg[4].CLK
+clock => u_reg[5].CLK
+clock => u_reg[6].CLK
+clock => u_reg[7].CLK
+clock => u_reg[8].CLK
+clock => u_reg[9].CLK
+clock => u_reg[10].CLK
+clock => u_reg[11].CLK
+clock => u_reg[12].CLK
+clock => u_reg[13].CLK
+clock => u_reg[14].CLK
+clock => u_reg[15].CLK
+clock => u_reg[16].CLK
+clock => u_reg[17].CLK
+clock => u_reg[18].CLK
+clock => u_reg[19].CLK
+clock => u_reg[20].CLK
+clock => u_reg[21].CLK
+clock => u_reg[22].CLK
+clock => u_reg[23].CLK
+clock => u_reg[24].CLK
+clock => u_reg[25].CLK
+clock => u_reg[26].CLK
+clock => u_reg[27].CLK
+clock => u_reg[28].CLK
+clock => u_reg[29].CLK
+clock => u_reg[30].CLK
+clock => u_reg[31].CLK
+reset => v_reg[0].ACLR
+reset => v_reg[1].ACLR
+reset => v_reg[2].ACLR
+reset => v_reg[3].ACLR
+reset => v_reg[4].ACLR
+reset => v_reg[5].ACLR
+reset => v_reg[6].ACLR
+reset => v_reg[7].ACLR
+reset => v_reg[8].ACLR
+reset => v_reg[9].ACLR
+reset => v_reg[10].ACLR
+reset => v_reg[11].ACLR
+reset => v_reg[12].ACLR
+reset => v_reg[13].ACLR
+reset => v_reg[14].ACLR
+reset => v_reg[15].ACLR
+reset => v_reg[16].ACLR
+reset => v_reg[17].ACLR
+reset => v_reg[18].ACLR
+reset => v_reg[19].ACLR
+reset => v_reg[20].ACLR
+reset => v_reg[21].ACLR
+reset => v_reg[22].ACLR
+reset => v_reg[23].ACLR
+reset => v_reg[24].ACLR
+reset => v_reg[25].ACLR
+reset => v_reg[26].ACLR
+reset => v_reg[27].ACLR
+reset => v_reg[28].ACLR
+reset => v_reg[29].ACLR
+reset => v_reg[30].ACLR
+reset => v_reg[31].ACLR
+reset => u_reg[0].ACLR
+reset => u_reg[1].ACLR
+reset => u_reg[2].ACLR
+reset => u_reg[3].ACLR
+reset => u_reg[4].ACLR
+reset => u_reg[5].ACLR
+reset => u_reg[6].ACLR
+reset => u_reg[7].ACLR
+reset => u_reg[8].ACLR
+reset => u_reg[9].ACLR
+reset => u_reg[10].ACLR
+reset => u_reg[11].ACLR
+reset => u_reg[12].ACLR
+reset => u_reg[13].ACLR
+reset => u_reg[14].ACLR
+reset => u_reg[15].ACLR
+reset => u_reg[16].ACLR
+reset => u_reg[17].ACLR
+reset => u_reg[18].ACLR
+reset => u_reg[19].ACLR
+reset => u_reg[20].ACLR
+reset => u_reg[21].ACLR
+reset => u_reg[22].ACLR
+reset => u_reg[23].ACLR
+reset => u_reg[24].ACLR
+reset => u_reg[25].ACLR
+reset => u_reg[26].ACLR
+reset => u_reg[27].ACLR
+reset => u_reg[28].ACLR
+reset => u_reg[29].ACLR
+reset => u_reg[30].ACLR
+reset => u_reg[31].ACLR
+in[0] => in[0].IN1
+in[1] => in[1].IN1
+in[2] => in[2].IN1
+in[3] => in[3].IN1
+in[4] => in[4].IN1
+in[5] => in[5].IN1
+in[6] => in[6].IN1
+in[7] => in[7].IN1
+in[8] => in[8].IN1
+in[9] => in[9].IN1
+in[10] => in[10].IN1
+in[11] => in[11].IN1
+in[12] => in[12].IN1
+in[13] => in[13].IN1
+in[14] => in[14].IN1
+in[15] => in[15].IN1
+in[16] => in[16].IN1
+in[17] => in[17].IN1
+in[18] => in[18].IN1
+in[19] => in[19].IN1
+in[20] => in[20].IN1
+in[21] => in[21].IN1
+in[22] => in[22].IN1
+in[23] => in[23].IN1
+in[24] => in[24].IN1
+in[25] => in[25].IN1
+in[26] => in[26].IN1
+in[27] => in[27].IN1
+in[28] => in[28].IN1
+in[29] => in[29].IN1
+in[30] => in[30].IN1
+in[31] => in[31].IN1
+out[0] <= carrylookahead_adder:cla_array[0].cla.sum
+out[1] <= carrylookahead_adder:cla_array[0].cla.sum
+out[2] <= carrylookahead_adder:cla_array[0].cla.sum
+out[3] <= carrylookahead_adder:cla_array[0].cla.sum
+out[4] <= carrylookahead_adder:cla_array[0].cla.sum
+out[5] <= carrylookahead_adder:cla_array[0].cla.sum
+out[6] <= carrylookahead_adder:cla_array[0].cla.sum
+out[7] <= carrylookahead_adder:cla_array[0].cla.sum
+out[8] <= carrylookahead_adder:cla_array[1].cla.sum
+out[9] <= carrylookahead_adder:cla_array[1].cla.sum
+out[10] <= carrylookahead_adder:cla_array[1].cla.sum
+out[11] <= carrylookahead_adder:cla_array[1].cla.sum
+out[12] <= carrylookahead_adder:cla_array[1].cla.sum
+out[13] <= carrylookahead_adder:cla_array[1].cla.sum
+out[14] <= carrylookahead_adder:cla_array[1].cla.sum
+out[15] <= carrylookahead_adder:cla_array[1].cla.sum
+out[16] <= carrylookahead_adder:cla_array[2].cla.sum
+out[17] <= carrylookahead_adder:cla_array[2].cla.sum
+out[18] <= carrylookahead_adder:cla_array[2].cla.sum
+out[19] <= carrylookahead_adder:cla_array[2].cla.sum
+out[20] <= carrylookahead_adder:cla_array[2].cla.sum
+out[21] <= carrylookahead_adder:cla_array[2].cla.sum
+out[22] <= carrylookahead_adder:cla_array[2].cla.sum
+out[23] <= carrylookahead_adder:cla_array[2].cla.sum
+out[24] <= carrylookahead_adder:cla_array[3].cla.sum
+out[25] <= carrylookahead_adder:cla_array[3].cla.sum
+out[26] <= carrylookahead_adder:cla_array[3].cla.sum
+out[27] <= carrylookahead_adder:cla_array[3].cla.sum
+out[28] <= carrylookahead_adder:cla_array[3].cla.sum
+out[29] <= carrylookahead_adder:cla_array[3].cla.sum
+out[30] <= carrylookahead_adder:cla_array[3].cla.sum
+out[31] <= carrylookahead_adder:cla_array[3].cla.sum
+
+
+|accumulator|carrysave_adder:csa
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+a[16] => a[16].IN1
+a[17] => a[17].IN1
+a[18] => a[18].IN1
+a[19] => a[19].IN1
+a[20] => a[20].IN1
+a[21] => a[21].IN1
+a[22] => a[22].IN1
+a[23] => a[23].IN1
+a[24] => a[24].IN1
+a[25] => a[25].IN1
+a[26] => a[26].IN1
+a[27] => a[27].IN1
+a[28] => a[28].IN1
+a[29] => a[29].IN1
+a[30] => a[30].IN1
+a[31] => a[31].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+b[15] => b[15].IN1
+b[16] => b[16].IN1
+b[17] => b[17].IN1
+b[18] => b[18].IN1
+b[19] => b[19].IN1
+b[20] => b[20].IN1
+b[21] => b[21].IN1
+b[22] => b[22].IN1
+b[23] => b[23].IN1
+b[24] => b[24].IN1
+b[25] => b[25].IN1
+b[26] => b[26].IN1
+b[27] => b[27].IN1
+b[28] => b[28].IN1
+b[29] => b[29].IN1
+b[30] => b[30].IN1
+b[31] => b[31].IN1
+c[0] => c[0].IN1
+c[1] => c[1].IN1
+c[2] => c[2].IN1
+c[3] => c[3].IN1
+c[4] => c[4].IN1
+c[5] => c[5].IN1
+c[6] => c[6].IN1
+c[7] => c[7].IN1
+c[8] => c[8].IN1
+c[9] => c[9].IN1
+c[10] => c[10].IN1
+c[11] => c[11].IN1
+c[12] => c[12].IN1
+c[13] => c[13].IN1
+c[14] => c[14].IN1
+c[15] => c[15].IN1
+c[16] => c[16].IN1
+c[17] => c[17].IN1
+c[18] => c[18].IN1
+c[19] => c[19].IN1
+c[20] => c[20].IN1
+c[21] => c[21].IN1
+c[22] => c[22].IN1
+c[23] => c[23].IN1
+c[24] => c[24].IN1
+c[25] => c[25].IN1
+c[26] => c[26].IN1
+c[27] => c[27].IN1
+c[28] => c[28].IN1
+c[29] => c[29].IN1
+c[30] => c[30].IN1
+c[31] => c[31].IN1
+sum[0] <= full_adder:gen_adders[0].full_adder.sum
+sum[1] <= full_adder:gen_adders[1].full_adder.sum
+sum[2] <= full_adder:gen_adders[2].full_adder.sum
+sum[3] <= full_adder:gen_adders[3].full_adder.sum
+sum[4] <= full_adder:gen_adders[4].full_adder.sum
+sum[5] <= full_adder:gen_adders[5].full_adder.sum
+sum[6] <= full_adder:gen_adders[6].full_adder.sum
+sum[7] <= full_adder:gen_adders[7].full_adder.sum
+sum[8] <= full_adder:gen_adders[8].full_adder.sum
+sum[9] <= full_adder:gen_adders[9].full_adder.sum
+sum[10] <= full_adder:gen_adders[10].full_adder.sum
+sum[11] <= full_adder:gen_adders[11].full_adder.sum
+sum[12] <= full_adder:gen_adders[12].full_adder.sum
+sum[13] <= full_adder:gen_adders[13].full_adder.sum
+sum[14] <= full_adder:gen_adders[14].full_adder.sum
+sum[15] <= full_adder:gen_adders[15].full_adder.sum
+sum[16] <= full_adder:gen_adders[16].full_adder.sum
+sum[17] <= full_adder:gen_adders[17].full_adder.sum
+sum[18] <= full_adder:gen_adders[18].full_adder.sum
+sum[19] <= full_adder:gen_adders[19].full_adder.sum
+sum[20] <= full_adder:gen_adders[20].full_adder.sum
+sum[21] <= full_adder:gen_adders[21].full_adder.sum
+sum[22] <= full_adder:gen_adders[22].full_adder.sum
+sum[23] <= full_adder:gen_adders[23].full_adder.sum
+sum[24] <= full_adder:gen_adders[24].full_adder.sum
+sum[25] <= full_adder:gen_adders[25].full_adder.sum
+sum[26] <= full_adder:gen_adders[26].full_adder.sum
+sum[27] <= full_adder:gen_adders[27].full_adder.sum
+sum[28] <= full_adder:gen_adders[28].full_adder.sum
+sum[29] <= full_adder:gen_adders[29].full_adder.sum
+sum[30] <= full_adder:gen_adders[30].full_adder.sum
+sum[31] <= full_adder:gen_adders[31].full_adder.sum
+carry[0] <= full_adder:gen_adders[0].full_adder.c_out
+carry[1] <= full_adder:gen_adders[1].full_adder.c_out
+carry[2] <= full_adder:gen_adders[2].full_adder.c_out
+carry[3] <= full_adder:gen_adders[3].full_adder.c_out
+carry[4] <= full_adder:gen_adders[4].full_adder.c_out
+carry[5] <= full_adder:gen_adders[5].full_adder.c_out
+carry[6] <= full_adder:gen_adders[6].full_adder.c_out
+carry[7] <= full_adder:gen_adders[7].full_adder.c_out
+carry[8] <= full_adder:gen_adders[8].full_adder.c_out
+carry[9] <= full_adder:gen_adders[9].full_adder.c_out
+carry[10] <= full_adder:gen_adders[10].full_adder.c_out
+carry[11] <= full_adder:gen_adders[11].full_adder.c_out
+carry[12] <= full_adder:gen_adders[12].full_adder.c_out
+carry[13] <= full_adder:gen_adders[13].full_adder.c_out
+carry[14] <= full_adder:gen_adders[14].full_adder.c_out
+carry[15] <= full_adder:gen_adders[15].full_adder.c_out
+carry[16] <= full_adder:gen_adders[16].full_adder.c_out
+carry[17] <= full_adder:gen_adders[17].full_adder.c_out
+carry[18] <= full_adder:gen_adders[18].full_adder.c_out
+carry[19] <= full_adder:gen_adders[19].full_adder.c_out
+carry[20] <= full_adder:gen_adders[20].full_adder.c_out
+carry[21] <= full_adder:gen_adders[21].full_adder.c_out
+carry[22] <= full_adder:gen_adders[22].full_adder.c_out
+carry[23] <= full_adder:gen_adders[23].full_adder.c_out
+carry[24] <= full_adder:gen_adders[24].full_adder.c_out
+carry[25] <= full_adder:gen_adders[25].full_adder.c_out
+carry[26] <= full_adder:gen_adders[26].full_adder.c_out
+carry[27] <= full_adder:gen_adders[27].full_adder.c_out
+carry[28] <= full_adder:gen_adders[28].full_adder.c_out
+carry[29] <= full_adder:gen_adders[29].full_adder.c_out
+carry[30] <= full_adder:gen_adders[30].full_adder.c_out
+carry[31] <= full_adder:gen_adders[31].full_adder.c_out
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[0].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[1].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[2].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[3].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[4].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[5].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[6].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[7].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[8].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[9].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[10].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[11].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[12].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[13].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[14].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[15].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[16].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[17].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[18].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[19].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[20].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[21].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[22].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[23].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[24].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[25].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[26].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[27].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[28].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[29].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[30].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrysave_adder:csa|full_adder:gen_adders[31].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[0].cla
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+c_in => carry[0].IN1
+sum[0] <= full_adder:gen_adders[0].full_adder.sum
+sum[1] <= full_adder:gen_adders[1].full_adder.sum
+sum[2] <= full_adder:gen_adders[2].full_adder.sum
+sum[3] <= full_adder:gen_adders[3].full_adder.sum
+sum[4] <= full_adder:gen_adders[4].full_adder.sum
+sum[5] <= full_adder:gen_adders[5].full_adder.sum
+sum[6] <= full_adder:gen_adders[6].full_adder.sum
+sum[7] <= full_adder:gen_adders[7].full_adder.sum
+c_out <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[0].cla|full_adder:gen_adders[0].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[0].cla|full_adder:gen_adders[1].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[0].cla|full_adder:gen_adders[2].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[0].cla|full_adder:gen_adders[3].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[0].cla|full_adder:gen_adders[4].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[0].cla|full_adder:gen_adders[5].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[0].cla|full_adder:gen_adders[6].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[0].cla|full_adder:gen_adders[7].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[1].cla
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+c_in => carry[0].IN1
+sum[0] <= full_adder:gen_adders[0].full_adder.sum
+sum[1] <= full_adder:gen_adders[1].full_adder.sum
+sum[2] <= full_adder:gen_adders[2].full_adder.sum
+sum[3] <= full_adder:gen_adders[3].full_adder.sum
+sum[4] <= full_adder:gen_adders[4].full_adder.sum
+sum[5] <= full_adder:gen_adders[5].full_adder.sum
+sum[6] <= full_adder:gen_adders[6].full_adder.sum
+sum[7] <= full_adder:gen_adders[7].full_adder.sum
+c_out <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[1].cla|full_adder:gen_adders[0].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[1].cla|full_adder:gen_adders[1].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[1].cla|full_adder:gen_adders[2].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[1].cla|full_adder:gen_adders[3].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[1].cla|full_adder:gen_adders[4].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[1].cla|full_adder:gen_adders[5].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[1].cla|full_adder:gen_adders[6].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[1].cla|full_adder:gen_adders[7].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[2].cla
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+c_in => carry[0].IN1
+sum[0] <= full_adder:gen_adders[0].full_adder.sum
+sum[1] <= full_adder:gen_adders[1].full_adder.sum
+sum[2] <= full_adder:gen_adders[2].full_adder.sum
+sum[3] <= full_adder:gen_adders[3].full_adder.sum
+sum[4] <= full_adder:gen_adders[4].full_adder.sum
+sum[5] <= full_adder:gen_adders[5].full_adder.sum
+sum[6] <= full_adder:gen_adders[6].full_adder.sum
+sum[7] <= full_adder:gen_adders[7].full_adder.sum
+c_out <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[2].cla|full_adder:gen_adders[0].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[2].cla|full_adder:gen_adders[1].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[2].cla|full_adder:gen_adders[2].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[2].cla|full_adder:gen_adders[3].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[2].cla|full_adder:gen_adders[4].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[2].cla|full_adder:gen_adders[5].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[2].cla|full_adder:gen_adders[6].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[2].cla|full_adder:gen_adders[7].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[3].cla
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+c_in => carry[0].IN1
+sum[0] <= full_adder:gen_adders[0].full_adder.sum
+sum[1] <= full_adder:gen_adders[1].full_adder.sum
+sum[2] <= full_adder:gen_adders[2].full_adder.sum
+sum[3] <= full_adder:gen_adders[3].full_adder.sum
+sum[4] <= full_adder:gen_adders[4].full_adder.sum
+sum[5] <= full_adder:gen_adders[5].full_adder.sum
+sum[6] <= full_adder:gen_adders[6].full_adder.sum
+sum[7] <= full_adder:gen_adders[7].full_adder.sum
+c_out <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[3].cla|full_adder:gen_adders[0].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[3].cla|full_adder:gen_adders[1].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[3].cla|full_adder:gen_adders[2].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[3].cla|full_adder:gen_adders[3].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[3].cla|full_adder:gen_adders[4].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[3].cla|full_adder:gen_adders[5].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[3].cla|full_adder:gen_adders[6].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accumulator|carrylookahead_adder:cla_array[3].cla|full_adder:gen_adders[7].full_adder
+a => a_and_b.IN0
+a => a_xor_b.IN0
+b => a_and_b.IN1
+b => a_xor_b.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
